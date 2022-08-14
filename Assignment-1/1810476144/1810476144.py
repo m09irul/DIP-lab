@@ -19,7 +19,7 @@ def main():
   plt.title("Grayscale")
   plt.plot(gray_hist)
 
-
+ 
   #extract red channel
   red_channel = img[:,:,0]
 
