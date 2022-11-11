@@ -26,7 +26,7 @@ print('Built in result: ')
 print()
 
 ''' plot '''
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(15,15))
 
 plt.subplot(1, 2, 1)
 plt.title('Built in function')
@@ -36,6 +36,7 @@ plt.subplot(1, 2, 2)
 plt.title('User defined function')
 plt.plot(hist_u)
 
-plt.show()
+#plt.show()
+plt.savefig("hist out")
 
 

@@ -41,7 +41,7 @@ def main():
 
 def PlotImg(img_set, title_set):
     n = len(img_set)
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(15, 15))
     for i in range(n):
         img = img_set[i]
         channel = len(img.shape)
@@ -54,7 +54,8 @@ def PlotImg(img_set, title_set):
             plt.imshow(img, cmap = 'gray')
 		
         plt.title(title_set[i])
-    plt.show()
+    #plt.show()
+    plt.savefig("outputs")
 
 if __name__ == '__main__':
     main()

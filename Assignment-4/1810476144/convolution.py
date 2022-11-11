@@ -51,7 +51,7 @@ for i in range(g_width):
 print(processed_img2)
 
 ''' plot '''
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(15,15))
 
 plt.subplot(1, 2, 1)
 plt.title('Built in function')
@@ -61,5 +61,6 @@ plt.subplot(1, 2, 2)
 plt.title('User defined function')
 plt.imshow(processed_img2, cmap = 'gray')
 
-plt.show()
+#plt.show()
+plt.savefig("conv out")
 

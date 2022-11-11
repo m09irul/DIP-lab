@@ -25,4 +25,4 @@ plt.title("Masked result")
 plt.imshow(result, cmap = 'gray')
 
 plt.savefig('Masking')
-plt.show()
+#plt.show()

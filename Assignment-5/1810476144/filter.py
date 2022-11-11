@@ -25,4 +25,5 @@ plt.title("Sobel filter")
 plt.imshow(processed_img2, cmap = 'gray')
 
 plt.savefig('Filter')
-plt.show()
+#plt.show()
+

@@ -34,31 +34,32 @@ average_kernel_imag_noised = cv2.filter2D(both_noised_image, -1, average_kernel)
 gaussian_kernel_image = cv2.filter2D(both_noised_image, -1, gaussian_kernel)
 median_kernel_image = median = cv2.medianBlur(both_noised_image,3)
 
-plt.figure(figsize = (15, 15))
+plt.figure(figsize = (10, 10))
 
-plt.subplot(2,3,1)
+plt.subplot(1,3,1)
 plt.title("Grayscale")
 plt.imshow(gray, cmap = "gray")
 
-plt.subplot(2,3,2)
+plt.subplot(1,3,2)
 plt.title("Average filtered gray")
 plt.imshow(average_kernel_image_gray, cmap = "gray")
 
-plt.subplot(2,3,3)
+plt.subplot(1,3,3)
 plt.title("Salt and paper noised")
 plt.imshow(both_noised_image, cmap = "gray")
-
-plt.subplot(2,3,4)
+plt.savefig("sp1")
+plt.subplot(1,3,1)
 plt.title("Average filtered noised image")
 plt.imshow(average_kernel_imag_noised, cmap = "gray")
 
-plt.subplot(2,3,5)
+plt.subplot(1,3,2)
 plt.title("Gausian filtered noised image")
 plt.imshow(gaussian_kernel_image, cmap = "gray")
 
-plt.subplot(2,3,6)
+plt.subplot(1,3,3)
 plt.title("Median filtered noised image")
 plt.imshow(median_kernel_image, cmap = "gray")
 
 plt.savefig("Salt and paper")
-plt.show()
+#plt.show()
+plt.savefig("sp2")

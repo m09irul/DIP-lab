@@ -7,7 +7,7 @@ def plot_image_and_histogram(img_set):
     subplot_column = 4
     j = 1
 
-    plt.figure(figsize = (15, 15))
+    plt.figure(figsize = (10, 10))
     
     for i in img_set:
         plt.subplot(subplot_row, subplot_column, j)
